@@ -8,7 +8,7 @@ const SubPageView = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get("http://localhost:5000/api/pages");
+      const res = await axios.get("https://mental-backend-8ia0.onrender.com/api/pages");
       const page = res.data.find((p) => p._id === pageId);
       if (page && page.subPages[subIndex]) {
         setSubPage(page.subPages[subIndex]);
@@ -36,7 +36,7 @@ const SubPageView = () => {
           return (
             <img
               key={i}
-              src={`http://localhost:5000/${block.data}`}
+              src={`https://mental-backend-8ia0.onrender.com/${block.data}`}
               alt=""
               style={{ width: "100%", marginBottom: 20, borderRadius: 8 }}
             />
@@ -47,7 +47,7 @@ const SubPageView = () => {
           return (
             <video
               key={i}
-              src={`http://localhost:5000/${block.data}`}
+              src={`https://mental-backend-8ia0.onrender.com/${block.data}`}
               controls
               style={{ width: "100%", marginBottom: 20, borderRadius: 8 }}
             />
