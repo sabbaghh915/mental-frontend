@@ -9,7 +9,7 @@ const TopBar = () => {
 
   useEffect(() => {
     const fetchPages = async () => {
-      const res = await axios.get("http://localhost:5000/api/pages");
+      const res = await axios.get("https://mental-backend-8ia0.onrender.com/api/pages");
       setPages(res.data);
     };
     fetchPages();
