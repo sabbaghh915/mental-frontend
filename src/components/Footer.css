@@ -1,0 +1,68 @@
+.site-footer {
+  background-color: #d665ba;
+  padding: 40px 20px;
+  color: #e2e8f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 1px solid #e2e8f0;
+}
+
+.contact-us h3 {
+  font-size: 22px;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.contact-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.contact-form button {
+  width: fit-content;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #1d4ed8;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footer-links li {
+  cursor: pointer;
+  color: #1e3a8a;
+}

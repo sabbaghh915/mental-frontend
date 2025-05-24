@@ -1,0 +1,88 @@
+/* ======= TOPBAR STYLE ======= */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #db66be; /* لون البنفسجي */
+  color: white;
+  padding: 12px 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ==== شعار المنصة ==== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img.topbar-logo {
+  height: 42px;
+  object-fit: contain;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* ==== قائمة العناوين ==== */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item > span {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.menu-item > span:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ==== القائمة المنسدلة ==== */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  color: #1e3a8a;
+  min-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+  z-index: 999;
+}
+
+.menu-item:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+.dropdown li a {
+  color: #1e3a8a;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown li:hover {
+  background-color: #f1f5f9;
+}

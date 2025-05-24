@@ -1,0 +1,10 @@
+nav > div:hover .dropdown {
+  display: block !important;
+}
+.dropdown li {
+  padding: 5px 0;
+}
+.dropdown li a {
+  text-decoration: none;
+  color: #333;
+}
