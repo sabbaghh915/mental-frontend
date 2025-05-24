@@ -10,7 +10,7 @@ const ViewPage = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get("http://localhost:5000/api/pages");
+      const res = await axios.get("https://mental-backend-8ia0.onrender.com/api/pages");
       const page = res.data.find((p) => p._id === pageId);
       if (page && page.subPages[subIndex]) {
         setSubPage(page.subPages[subIndex]);
@@ -46,7 +46,7 @@ const ViewPage = () => {
                 return (
                   <div key={i} className="media-box">
                     <span className="media-label">📷 صورة</span>
-                    <img src={`http://localhost:5000/${block.data}`} alt="" />
+                    <img src={`https://mental-backend-8ia0.onrender.com/${block.data}`} alt="" />
                   </div>
                 );
               }
@@ -55,7 +55,7 @@ const ViewPage = () => {
                 return (
                   <div key={i} className="media-box">
                     <span className="media-label">🎥 فيديو توضيحي</span>
-                    <video src={`http://localhost:5000/${block.data}`} controls />
+                    <video src={`https://mental-backend-8ia0.onrender.com/${block.data}`} controls />
                   </div>
                 );
               }
