@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchHomePages = async () => {
-      const res = await axios.get("http://localhost:5000/api/pages");
+      const res = await axios.get("https://mental-backend-8ia0.onrender.com/api/pages");
       const filtered = res.data
         .filter(p => p.showOnHome)
         .sort((a, b) => a.order - b.order);
