@@ -1,7 +1,7 @@
 .contact-container {
   padding: 40px 20px;
   background-color: #f9fafb;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   min-height: 100vh;
 }
 
@@ -46,7 +46,7 @@
 
 .contact-form button {
   align-self: start;
-  background-color: #92400e;
+  background-color: var(--color-secondary);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -55,5 +55,5 @@
 }
 
 .contact-form button:hover {
-  background-color: #78350f;
+  background-color: var(--color-primary);
 }
